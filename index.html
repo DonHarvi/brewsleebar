@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="canonical" href="https://brewsleebar.me/">
+  <title>BrewsLee — craft beer bar in Budva</title>
+  <meta name="description" content="BrewsLee — craft beer bar in Budva. Six taps, Belgian bottle shelf, honest pours. Inside Tre Canne complex.">
+  <link rel="stylesheet" href="/style.css">
+
+  <!-- Google Analytics: ID needed -->
+  <!--
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXX', { page_title: 'BrewsLee — Home', page_path: '/' });
+  </script>
+  -->
+</head>
+<body>
+  <div class="stripe"></div>
+
+  <main class="page">
+    <div class="top">
+      <span style="font-weight:800; letter-spacing:-0.02em; font-size:15px;">BREWSLEE</span>
+      <div class="lang-switch">
+        <button data-lang="en" onclick="setLang('en')">EN</button>
+        <span class="lang-sep">|</span>
+        <button data-lang="sr" onclick="setLang('sr')">SR</button>
+        <span class="lang-sep">|</span>
+        <button data-lang="ru" onclick="setLang('ru')">RU</button>
+      </div>
+    </div>
+
+    <div class="hero">
+      <img class="logo" src="/assets/logo.jpeg" alt="BrewsLee">
+      <div class="tagline" data-en="Craft beer bar in Budva · Tre Canne"
+           data-sr="Craft beer bar u Budvi · Tre Canne"
+           data-ru="Крафтовый пивной бар в Будве · Tre Canne">Craft beer bar in Budva · Tre Canne</div>
+    </div>
+
+    <!-- PLACEHOLDER: hero photo of the actual bar -->
+    <!-- <img class="hero-photo" src="/assets/hero.jpg" alt="BrewsLee bar"> -->
+
+    <!-- PLACEHOLDER: real Google Maps link -->
+    <a class="btn btn-primary" href="#"
+       data-en="📍 Get Directions on Google Maps" data-sr="📍 Kako doći — Google Maps" data-ru="📍 Проложить маршрут — Google Maps">📍 Get Directions on Google Maps</a>
+    <!-- PLACEHOLDER: Google Business Profile review link -->
+    <a class="btn btn-secondary" href="#"
+       data-en="⭐ Leave a Review" data-sr="⭐ Ostavi recenziju" data-ru="⭐ Оставить отзыв">⭐ Leave a Review</a>
+
+    <div class="section">
+      <p data-en="BrewsLee is a craft beer bar in Budva. Six taps — pilsner, pale and dark lager, IPA, wheat beer and cherry ale — plus a Belgian bottle shelf with Delirium Tremens, Rochefort 10, Chimay Bleue, Pauwel Kwak and Lindemans Framboise. Also natural Trabanco cider, Prosecco by the glass, local rakija, whisky and Aperol Spritz. A small bar with honest pours, no tourist mark-ups and music you can still talk over."
+         data-sr="BrewsLee je craft bar u Budvi. Na točenju držimo šest piva — pilsner, svijetli i tamni lager, IPA, pšenično i ale sa višnjom. Na polici belgijske klasike: Delirium Tremens, Rochefort 10, Chimay Bleue, Pauwel Kwak i Lindemans Framboise. Uz pivo idu prirodni sajder Trabanco, Prosecco na čašu, domaća rakija, viski i Aperol Spritz. Mala šanka, pošteno natočeno, bez turističkih cijena i bez muzike koja se nadglasava."
+         data-ru="BrewsLee — крафтовый бар в Будве. Шесть кранов: пилснер, светлый и тёмный лагер, IPA, пшеничное и вишнёвый эль. На полке бельгийская классика — Delirium Tremens, Rochefort 10, Chimay Bleue, Pauwel Kwak, Lindemans Framboise. Есть натуральный сидр Trabanco, просекко по бокалам, местная ракия, виски и Aperol Spritz. Маленький бар, честный налив, без туристических наценок и без музыки, которую приходится перекрикивать."
+         style="font-size:15px; line-height:1.55; color:var(--muted);">BrewsLee is a craft beer bar in Budva...</p>
+    </div>
+
+    <!-- MENU: placeholder structure, needs current taps + prices from photo/board -->
+    <div class="section">
+      <div class="section-title" data-en="On Tap" data-sr="Na točenju" data-ru="На кранах">On Tap</div>
+      <div class="menu-card">
+        <!-- PLACEHOLDER: replace with actual 6 taps + prices -->
+        <div class="menu-item"><span data-en="Pilsner" data-sr="Pilsner" data-ru="Пилснер">Pilsner</span><span class="price">—</span></div>
+        <div class="menu-item"><span data-en="Pale Lager" data-sr="Svijetli lager" data-ru="Светлый лагер">Pale Lager</span><span class="price">—</span></div>
+        <div class="menu-item"><span data-en="Dark Lager" data-sr="Tamni lager" data-ru="Тёмный лагер">Dark Lager</span><span class="price">—</span></div>
+        <div class="menu-item"><span>IPA</span><span class="price">—</span></div>
+        <div class="menu-item"><span data-en="Wheat Beer" data-sr="Pšenično pivo" data-ru="Пшеничное">Wheat Beer</span><span class="price">—</span></div>
+        <div class="menu-item"><span data-en="Cherry Ale" data-sr="Ale sa višnjom" data-ru="Вишнёвый эль">Cherry Ale</span><span class="price">—</span></div>
+      </div>
+
+      <div class="section-title" style="margin-top:24px" data-en="Belgian Shelf" data-sr="Belgijska polica" data-ru="Бельгийская полка">Belgian Shelf</div>
+      <div class="menu-card">
+        <div class="menu-item"><span>Delirium Tremens</span><span class="price">—</span></div>
+        <div class="menu-item"><span>Rochefort 10</span><span class="price">—</span></div>
+        <div class="menu-item"><span>Chimay Bleue</span><span class="price">—</span></div>
+        <div class="menu-item"><span>Pauwel Kwak</span><span class="price">—</span></div>
+        <div class="menu-item"><span>Lindemans Framboise</span><span class="price">—</span></div>
+      </div>
+    </div>
+
+    <!-- WAYFINDING: needs address + entrance photos (different entrance than WaxBrew) -->
+    <div class="section">
+      <div class="section-title" data-en="How to Find Us" data-sr="Kako nas naći" data-ru="Как нас найти">How to Find Us</div>
+      <div class="route-option" data-en="Inside Tre Canne complex" data-sr="Unutar kompleksa Tre Canne" data-ru="Внутри комплекса Tre Canne">Inside Tre Canne complex</div>
+      <div class="step">
+        <div class="step-num">1</div>
+        <div>
+          <div class="step-text" data-en="[PLACEHOLDER: entrance description]" data-sr="[PLACEHOLDER]" data-ru="[ПЛЕЙСХОЛДЕР: описание входа]">[PLACEHOLDER: entrance description]</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- HOURS: placeholder, needs confirmed hours -->
+    <div class="section">
+      <div class="section-title" data-en="Opening Hours" data-sr="Radno vrijeme" data-ru="Часы работы">Opening Hours</div>
+      <div class="hours-grid">
+        <div class="hours-row"><span class="day" data-en="Every day" data-sr="Svaki dan" data-ru="Ежедневно">Every day</span><span>[PLACEHOLDER 17:00–01:00]</span></div>
+      </div>
+    </div>
+
+    <!-- GALLERY: placeholder, needs real bar photos -->
+    <!--
+    <div class="section">
+      <div class="section-title" data-en="Gallery" data-sr="Galerija" data-ru="Галерея">Gallery</div>
+      <div class="gallery">
+        <img src="/assets/gallery-1.jpg" alt="BrewsLee">
+        <img src="/assets/gallery-2.jpg" alt="BrewsLee">
+      </div>
+    </div>
+    -->
+
+    <div class="section">
+      <div class="social-links">
+        <!-- PLACEHOLDER: Instagram link -->
+        <a class="social-btn" href="#" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </div>
+
+    <footer>BrewsLee © 2026</footer>
+  </main>
+
+  <script src="/script.js"></script>
+</body>
+</html>
