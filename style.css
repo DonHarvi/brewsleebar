@@ -242,6 +242,41 @@ img { max-width: 100%; display: block; }
   font-weight: 600;
 }
 
+.club-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 20px 18px;
+}
+.club-hero {
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-size: 22px;
+  font-weight: 800;
+  font-style: italic;
+  color: var(--yellow);
+  margin-bottom: 10px;
+}
+.club-desc {
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--muted);
+  margin: 0 0 16px;
+}
+.belt-table {
+  margin-bottom: 18px;
+}
+.belt-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 7px 0;
+  font-size: 14px;
+  border-bottom: 1px solid var(--border);
+}
+.belt-row:last-child { border-bottom: none; }
+.belt { font-weight: 600; }
+.belt-free { color: var(--yellow); font-weight: 600; }
+
 footer {
   text-align: center;
   margin-top: 40px;
