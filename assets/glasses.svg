@@ -1,0 +1,112 @@
+<svg viewBox="0 0 520 93" xmlns="http://www.w3.org/2000/svg" aria-label="8 craft taps">
+
+  <g transform="translate(32,0)">
+    <polygon points="-20,4 20,4 14,64 -14,64" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.22)" stroke-width="1.2"/>
+    <polygon points="-18,20 18,20 13,63 -13,63" fill="#d4a020" opacity="0.88"/>
+    <polygon points="-10,20 10,20 8,63 -8,63" fill="#e8c040" opacity="0.18"/>
+    <ellipse cx="0" cy="20" rx="17" ry="3.5" fill="rgba(255,248,220,0.88)"/>
+    <rect x="-16" y="64" width="32" height="2.5" rx="1" fill="rgba(255,255,255,0.18)"/>
+    <rect x="-4"  y="66.5" width="8" height="5" fill="rgba(255,255,255,0.12)"/>
+    <rect x="-11" y="71.5" width="22" height="2.5" rx="1" fill="rgba(255,255,255,0.18)"/>
+    <circle cx="-9" cy="36" r="1.5" fill="rgba(255,255,255,0.35)"/>
+    <circle cx="7"  cy="50" r="1"   fill="rgba(255,255,255,0.28)"/>
+    <circle cx="-3" cy="57" r="1.2" fill="rgba(255,255,255,0.25)"/>
+    <text x="0" y="88" text-anchor="middle" font-size="6.5" fill="rgba(253,215,0,0.65)" font-family="Arial,sans-serif" font-weight="700" letter-spacing="0.8">PILSNER</text>
+  </g>
+
+  <g transform="translate(97,0)">
+    <polygon points="-20,4 20,4 14,64 -14,64" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.22)" stroke-width="1.2"/>
+    <polygon points="-18,20 18,20 13,63 -13,63" fill="#dcc050" opacity="0.88"/>
+    <polygon points="-10,20 10,20 8,63 -8,63" fill="#f0d870" opacity="0.18"/>
+    <ellipse cx="0" cy="20" rx="17" ry="3.5" fill="rgba(255,248,220,0.88)"/>
+    <rect x="-16" y="64" width="32" height="2.5" rx="1" fill="rgba(255,255,255,0.18)"/>
+    <rect x="-4"  y="66.5" width="8" height="5" fill="rgba(255,255,255,0.12)"/>
+    <rect x="-11" y="71.5" width="22" height="2.5" rx="1" fill="rgba(255,255,255,0.18)"/>
+    <circle cx="-9" cy="36" r="1.5" fill="rgba(255,255,255,0.35)"/>
+    <circle cx="7"  cy="50" r="1"   fill="rgba(255,255,255,0.28)"/>
+    <circle cx="-3" cy="57" r="1.2" fill="rgba(255,255,255,0.25)"/>
+    <text x="0" y="88" text-anchor="middle" font-size="6.5" fill="rgba(253,215,0,0.65)" font-family="Arial,sans-serif" font-weight="700" letter-spacing="0.8">LAGER</text>
+  </g>
+
+  <g transform="translate(162,0)">
+    <polygon points="-20,4 20,4 14,64 -14,64" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.22)" stroke-width="1.2"/>
+    <polygon points="-18,20 18,20 13,63 -13,63" fill="#1e0804" opacity="0.88"/>
+    <polygon points="-10,20 10,20 8,63 -8,63" fill="#3a1008" opacity="0.18"/>
+    <ellipse cx="0" cy="20" rx="17" ry="3.5" fill="#6b3010"/>
+    <rect x="-16" y="64" width="32" height="2.5" rx="1" fill="rgba(255,255,255,0.18)"/>
+    <rect x="-4"  y="66.5" width="8" height="5" fill="rgba(255,255,255,0.12)"/>
+    <rect x="-11" y="71.5" width="22" height="2.5" rx="1" fill="rgba(255,255,255,0.18)"/>
+    <circle cx="-9" cy="36" r="1.5" fill="rgba(255,255,255,0.35)"/>
+    <circle cx="7"  cy="50" r="1"   fill="rgba(255,255,255,0.28)"/>
+    <circle cx="-3" cy="57" r="1.2" fill="rgba(255,255,255,0.25)"/>
+    <text x="0" y="88" text-anchor="middle" font-size="6.5" fill="rgba(253,215,0,0.65)" font-family="Arial,sans-serif" font-weight="700" letter-spacing="0.8">DARK</text>
+  </g>
+
+  <g transform="translate(227,0)">
+    <polygon points="-19,4 19,4 21,40 16,64 -16,64 -21,40" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.22)" stroke-width="1.2"/>
+    <polygon points="-17,18 17,18 19,40 14,63 -14,63 -19,40" fill="#b86010" opacity="0.88"/>
+    <polygon points="-9,18 9,18 10,40 7,63 -7,63 -10,40" fill="#d08028" opacity="0.18"/>
+    <ellipse cx="0" cy="18" rx="18" ry="3.5" fill="rgba(255,248,220,0.88)"/>
+    <rect x="-16" y="64" width="32" height="2.5" rx="1" fill="rgba(255,255,255,0.18)"/>
+    <rect x="-4"  y="66.5" width="8" height="5" fill="rgba(255,255,255,0.12)"/>
+    <rect x="-11" y="71.5" width="22" height="2.5" rx="1" fill="rgba(255,255,255,0.18)"/>
+    <circle cx="-11" cy="38" r="1.5" fill="rgba(255,255,255,0.35)"/>
+    <circle cx="8"  cy="52" r="1"   fill="rgba(255,255,255,0.28)"/>
+    <circle cx="-4" cy="58" r="1.2" fill="rgba(255,255,255,0.25)"/>
+    <text x="0" y="88" text-anchor="middle" font-size="6.5" fill="rgba(253,215,0,0.65)" font-family="Arial,sans-serif" font-weight="700" letter-spacing="0.8">IPA</text>
+  </g>
+
+  <g transform="translate(292,0)">
+    <polygon points="-14,4 14,4 18,35 16,64 -16,64 -18,35" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.22)" stroke-width="1.2"/>
+    <polygon points="-12,20 12,20 16,34 14,63 -14,63 -16,34" fill="#d8c060" opacity="0.88"/>
+    <polygon points="-6,20 6,20 8,34 7,63 -7,63 -8,34" fill="#ece880" opacity="0.18"/>
+    <ellipse cx="0" cy="20" rx="12" ry="3" fill="rgba(255,248,220,0.88)"/>
+    <rect x="-16" y="64" width="32" height="2.5" rx="1" fill="rgba(255,255,255,0.18)"/>
+    <rect x="-4"  y="66.5" width="8" height="5" fill="rgba(255,255,255,0.12)"/>
+    <rect x="-11" y="71.5" width="22" height="2.5" rx="1" fill="rgba(255,255,255,0.18)"/>
+    <circle cx="-8" cy="38" r="1.5" fill="rgba(255,255,255,0.35)"/>
+    <circle cx="9"  cy="52" r="1"   fill="rgba(255,255,255,0.28)"/>
+    <text x="0" y="88" text-anchor="middle" font-size="6.5" fill="rgba(253,215,0,0.65)" font-family="Arial,sans-serif" font-weight="700" letter-spacing="0.8">WHEAT</text>
+  </g>
+
+  <g transform="translate(357,0)">
+    <polygon points="-19,4 19,4 21,40 16,64 -16,64 -21,40" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.22)" stroke-width="1.2"/>
+    <polygon points="-17,5 17,5 19,40 14,63 -14,63 -19,40" fill="#a00828" opacity="0.88"/>
+    <polygon points="-9,5 9,5 10,40 7,63 -7,63 -10,40" fill="#c81840" opacity="0.18"/>
+    
+    <rect x="-16" y="64" width="32" height="2.5" rx="1" fill="rgba(255,255,255,0.18)"/>
+    <rect x="-4"  y="66.5" width="8" height="5" fill="rgba(255,255,255,0.12)"/>
+    <rect x="-11" y="71.5" width="22" height="2.5" rx="1" fill="rgba(255,255,255,0.18)"/>
+    <circle cx="-11" cy="38" r="1.5" fill="rgba(255,255,255,0.35)"/>
+    <circle cx="8"  cy="52" r="1"   fill="rgba(255,255,255,0.28)"/>
+    <circle cx="-4" cy="58" r="1.2" fill="rgba(255,255,255,0.25)"/>
+    <text x="0" y="88" text-anchor="middle" font-size="6.5" fill="rgba(253,215,0,0.65)" font-family="Arial,sans-serif" font-weight="700" letter-spacing="0.8">CHERRY</text>
+  </g>
+
+  <g transform="translate(422,0)">
+    <polygon points="-10,4 10,4 8,64 -8,64" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.22)" stroke-width="1.2"/>
+    <polygon points="-8,10 8,10 6,63 -6,63" fill="#f05810" opacity="0.88"/>
+    <polygon points="-4,10 4,10 3,63 -3,63" fill="#ff8040" opacity="0.22"/>
+    <rect x="-8"  y="64" width="16" height="2.5" rx="1" fill="rgba(255,255,255,0.18)"/>
+    <rect x="-3"  y="66.5" width="6" height="5" fill="rgba(255,255,255,0.12)"/>
+    <rect x="-10" y="71.5" width="20" height="2.5" rx="1" fill="rgba(255,255,255,0.18)"/>
+    <circle cx="-4" cy="30" r="1.2" fill="rgba(255,255,255,0.35)"/>
+    <circle cx="4"  cy="48" r="1"   fill="rgba(255,255,255,0.28)"/>
+    <!-- orange slice hint -->
+    <circle cx="6" cy="12" r="4" fill="#ff9020" opacity="0.7"/>
+    <text x="0" y="88" text-anchor="middle" font-size="6.5" fill="rgba(253,215,0,0.65)" font-family="Arial,sans-serif" font-weight="700" letter-spacing="0.8">APEROL</text>
+  </g>
+
+  <g transform="translate(487,0)">
+    <polygon points="-20,4 20,4 3,52 -3,52" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.22)" stroke-width="1.2"/>
+    <polygon points="-18,8 18,8 2,51 -2,51" fill="#b8e030" opacity="0.82"/>
+    <polygon points="-10,8 10,8 1,51 -1,51" fill="#d8f850" opacity="0.2"/>
+    <rect x="-2"  y="52" width="4" height="12" fill="rgba(255,255,255,0.16)"/>
+    <rect x="-12" y="64" width="24" height="2.5" rx="1" fill="rgba(255,255,255,0.18)"/>
+    <!-- salt rim hint -->
+    <line x1="-20" y1="8" x2="20" y2="8" stroke="rgba(255,255,255,0.4)" stroke-width="2" stroke-linecap="round"/>
+    <!-- lime -->
+    <circle cx="12" cy="10" r="5" fill="#90c020" opacity="0.75"/>
+    <text x="0" y="88" text-anchor="middle" font-size="6.5" fill="rgba(253,215,0,0.65)" font-family="Arial,sans-serif" font-weight="700" letter-spacing="0.8">MARG.</text>
+  </g>
+</svg>

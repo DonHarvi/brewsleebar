@@ -79,9 +79,11 @@ img { max-width: 100%; display: block; }
   text-align: center;
   margin-bottom: 28px;
 }
-.hero img.logo {
-  width: 220px;
-  margin: 0 auto 18px;
+.glasses-row {
+  width: 100%;
+  max-width: 520px;
+  margin: 0 auto 22px;
+  display: block;
 }
 .hero .tagline {
   color: var(--muted);
