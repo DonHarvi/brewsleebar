@@ -26,6 +26,14 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+/* Brand font for headings */
+.section-title,
+.route-option,
+.menu-cat,
+.hero .tagline {
+  font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
 a { color: inherit; }
 
 img { max-width: 100%; display: block; }
@@ -112,12 +120,13 @@ img { max-width: 100%; display: block; }
   margin-top: 36px;
 }
 .section-title {
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 700;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--orange);
   margin-bottom: 14px;
+  font-style: italic;
 }
 
 .hours-grid {
@@ -158,8 +167,9 @@ img { max-width: 100%; display: block; }
   font-size: 15px;
 }
 .menu-item .price {
-  color: var(--muted);
+  color: var(--yellow);
   white-space: nowrap;
+  font-weight: 600;
 }
 
 .route-option {
