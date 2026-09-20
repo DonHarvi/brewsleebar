@@ -143,9 +143,10 @@
     <img class="hero-photo" src="/assets/hero.jpg" alt="BrewsLee bar">
 
     <a class="btn btn-primary" href="https://maps.app.goo.gl/7J8sVeeXBqvgorux8"
+       onclick="gtag('event','click_directions',{event_category:'cta',event_label:'google_maps'})"
        data-en="📍 Get Directions on Google Maps" data-sr="📍 Kako doći — Google Maps" data-ru="📍 Проложить маршрут — Google Maps">📍 Get Directions on Google Maps</a>
-    <!-- TODO: replace # with real Google Business Profile review link -->
     <a class="btn btn-secondary" href="https://g.page/r/CV5NVRH-tEINEBM/review" target="_blank" rel="noopener"
+       onclick="gtag('event','click_review',{event_category:'cta',event_label:'google_review'})"
        data-en="⭐ Leave a Review" data-sr="⭐ Ostavi recenziju" data-ru="⭐ Оставить отзыв">⭐ Leave a Review</a>
 
     <div class="section">
@@ -231,13 +232,15 @@
           <div class="belt-row"><span class="belt bk">⬛ Black · 50 visits</span><span class="belt-free" data-en="every 5th + −20%" data-sr="svaka 5-ta + −20%" data-ru="каждая 5-я + −20%">every 5th + −20%</span></div>
         </div>
         <a class="btn btn-primary" href="https://t.me/brewslee_bar_bot" target="_blank" rel="noopener"
+           onclick="gtag('event','click_loyalty_bot',{event_category:'cta',event_label:'telegram_bot'})"
            data-en="🐉 Join the Club — t.me/brewslee_bar_bot" data-sr="🐉 Pridruži se Klubu" data-ru="🐉 Вступить в Клуб">🐉 Join the Club — t.me/brewslee_bar_bot</a>
       </div>
     </div>
 
     <div class="section">
       <div class="social-links">
-        <a class="social-btn" href="https://www.instagram.com/brewsleebar/" target="_blank" rel="noopener">Instagram</a>
+        <a class="social-btn" href="https://www.instagram.com/brewsleebar/" target="_blank" rel="noopener"
+           onclick="gtag('event','click_instagram',{event_category:'social',event_label:'instagram'})">Instagram</a>
       </div>
     </div>
 
