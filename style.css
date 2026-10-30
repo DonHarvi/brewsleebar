@@ -185,14 +185,12 @@ button:focus-visible, a:focus-visible { outline: 3px solid var(--yellow); outlin
 }
 .hero-sign {
   display: block;
-  width: 100%;
-  height: 74vw;
-  max-height: 340px;
-  object-fit: contain;
-  background: oklch(0.08 0.002 30);
-  margin: 20px 0 0;
-  border-top: 1px solid oklch(0.25 0.005 30);
-  border-bottom: 1px solid oklch(0.25 0.005 30);
+  width: calc(100% + 40px);
+  margin: 24px -20px 0;
+  height: 58vw;
+  max-height: 300px;
+  object-fit: cover;
+  object-position: center center;
 }
 .hero__actions {
   display: flex;
