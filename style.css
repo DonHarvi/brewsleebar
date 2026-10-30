@@ -165,9 +165,8 @@ button:focus-visible, a:focus-visible { outline: 3px solid var(--yellow); outlin
   position: relative;
   padding: 48px 20px 36px;
   border-bottom: 1px solid var(--line);
-  background: url('/assets/hero.jpg') 68% center / cover no-repeat;
-  min-height: 88vw;
-  max-height: 520px;
+  background: url('/assets/hero.jpg') 60% center / cover no-repeat;
+  height: clamp(280px, 80vw, 480px);
   display: flex;
   flex-direction: column;
 }
@@ -196,21 +195,7 @@ button:focus-visible, a:focus-visible { outline: 3px solid var(--yellow); outlin
   box-shadow: 0 0 0 4px oklch(0.91 0.19 100 / 0.18);
   flex-shrink: 0;
 }
-.hero__brand-overlay {
-  position: relative; z-index: 1;
-  font-family: var(--font-display);
-  font-size: clamp(4rem, 23vw, 8rem);
-  font-weight: 700;
-  font-style: italic;
-  line-height: 0.88;
-  letter-spacing: -0.05em;
-  color: var(--paper);
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-  justify-content: center;
-  padding: 24px 0;
-}
+
 .hero__actions {
   position: relative; z-index: 1;
   display: flex;
