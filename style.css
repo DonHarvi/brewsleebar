@@ -174,7 +174,9 @@ button:focus-visible, a:focus-visible { outline: 3px solid var(--yellow); outlin
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(160deg, oklch(0.1 0 0 / 0.55) 0%, oklch(0.08 0 0 / 0.75) 100%);
+  background:
+    radial-gradient(ellipse 50% 40% at 58% 32%, oklch(0.97 0.06 88 / 0.55) 0%, transparent 70%),
+    linear-gradient(160deg, oklch(0.1 0 0 / 0.45) 0%, oklch(0.08 0 0 / 0.72) 100%);
 }
 .hero__eyebrow {
   position: relative; z-index: 1;
