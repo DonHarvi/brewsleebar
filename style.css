@@ -165,7 +165,7 @@ button:focus-visible, a:focus-visible { outline: 3px solid var(--yellow); outlin
   position: relative;
   padding: 48px 20px 36px;
   border-bottom: 1px solid var(--line);
-  background: url('/assets/hero.jpg') 60% center / cover no-repeat;
+  background: url('/assets/hero-evening.jpg') center 30% / cover no-repeat;
   height: clamp(280px, 80vw, 480px);
   display: flex;
   flex-direction: column;
