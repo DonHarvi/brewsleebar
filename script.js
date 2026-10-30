@@ -93,7 +93,7 @@ document.addEventListener('DOMContentLoaded', function() {
   var qrEl = document.getElementById('qr-canvas');
   if (qrEl && typeof QRCode !== 'undefined') {
     new QRCode(qrEl, {
-      text: 'https://brewsleebar.me',
+      text: 'https://brewsleebar.me/#menu',
       width: 84,
       height: 84,
       colorDark: '#000000',
