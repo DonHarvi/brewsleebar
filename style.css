@@ -285,3 +285,147 @@ footer {
   font-size: 13px;
   color: var(--muted);
 }
+
+/* ── Tabs ─────────────────────────────────────────── */
+.menu-tabs {
+  display: flex;
+  gap: 8px;
+  margin: 20px 0 24px;
+}
+.tab-btn {
+  flex: 1;
+  padding: 11px;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--muted);
+  font-weight: 700;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.15s;
+  font-family: inherit;
+}
+.tab-btn.active {
+  background: var(--yellow);
+  color: var(--ink);
+  border-color: var(--yellow);
+}
+.tab-panel { display: none; }
+.tab-panel.active { display: block; }
+
+/* ── QR card ──────────────────────────────────────── */
+.qr-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 16px 18px;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  margin-top: 20px;
+}
+.qr-box {
+  flex-shrink: 0;
+  background: #fff;
+  border-radius: 8px;
+  padding: 6px;
+  width: 96px;
+  height: 96px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.qr-box img, .qr-box canvas {
+  width: 84px !important;
+  height: 84px !important;
+  display: block;
+}
+.qr-meta strong { display: block; font-size: 14px; font-weight: 700; margin-bottom: 4px; }
+.qr-meta span { font-size: 12px; color: var(--muted); line-height: 1.45; display: block; }
+
+/* ── Private event packages ───────────────────────── */
+.event-pkg {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 18px;
+  margin-bottom: 12px;
+}
+.pkg-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+.pkg-name {
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-weight: 800;
+  font-style: italic;
+  font-size: 18px;
+  color: var(--yellow);
+}
+.pkg-dur { font-size: 12px; color: var(--muted); margin-top: 3px; }
+.pkg-price { text-align: right; }
+.pkg-price strong { display: block; font-size: 22px; font-weight: 800; color: var(--yellow); white-space: nowrap; }
+.pkg-price span { font-size: 11px; color: var(--muted); }
+.pkg-list { list-style: none; padding: 0; margin: 0 0 16px; }
+.pkg-list li { font-size: 14px; color: var(--muted); padding: 4px 0; line-height: 1.4; }
+.pkg-list li::before { content: '✓ '; color: var(--yellow); font-weight: 700; }
+.event-note {
+  font-size: 12px;
+  color: var(--muted);
+  text-align: center;
+  margin: 0 0 16px;
+  padding: 8px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
+/* ── Order section (members only) ─────────────────── */
+.order-wrap {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border);
+}
+.order-title {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--orange);
+  margin-bottom: 12px;
+  font-style: italic;
+}
+#order-login { text-align: center; }
+#order-login > p { font-size: 14px; color: var(--muted); margin: 0 0 14px; line-height: 1.45; }
+#order-form { display: none; }
+.order-member-info { font-size: 13px; color: var(--muted); text-align: center; margin-bottom: 12px; }
+.order-items {
+  list-style: none; padding: 0; margin: 0 0 12px;
+  border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden;
+}
+.order-item {
+  display: flex; align-items: center; gap: 10px;
+  padding: 10px 14px; font-size: 14px;
+  background: var(--surface);
+  border-bottom: 1px solid var(--border); cursor: pointer;
+}
+.order-item:last-child { border-bottom: none; }
+.order-item input[type=checkbox] { flex-shrink: 0; width: 18px; height: 18px; accent-color: var(--yellow); cursor: pointer; }
+.order-item label { flex: 1; cursor: pointer; }
+.order-item .price { color: var(--yellow); font-weight: 600; white-space: nowrap; font-size: 13px; }
+.order-note-input {
+  width: 100%; background: var(--bg); border: 1px solid var(--border);
+  border-radius: 8px; color: var(--text); padding: 10px 12px; font-size: 14px;
+  resize: none; box-sizing: border-box; font-family: inherit; margin-bottom: 12px;
+}
+.order-note-input::placeholder { color: var(--muted); }
+.order-send-btn {
+  display: block; width: 100%; padding: 16px; border-radius: var(--radius);
+  font-weight: 700; font-size: 16px; text-align: center; cursor: pointer;
+  background: var(--yellow); color: var(--ink); border: none; font-family: inherit;
+  transition: opacity 0.15s;
+}
+.order-send-btn:hover { opacity: 0.85; }

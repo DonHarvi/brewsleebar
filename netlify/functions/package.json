@@ -1,0 +1,7 @@
+{
+  "name": "brewslee-functions",
+  "version": "1.0.0",
+  "dependencies": {
+    "pg": "^8.13.0"
+  }
+}

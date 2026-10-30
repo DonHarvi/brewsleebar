@@ -10,6 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,600;0,700;1,700;1,800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
 
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-2LE015YY9X"></script>
   <script>
@@ -157,36 +158,92 @@
          style="font-size:15px; line-height:1.55; color:var(--muted);">BrewsLee is a craft beer bar in Budva...</p>
     </div>
 
+    <!-- Menu tabs -->
+    <div class="menu-tabs">
+      <button class="tab-btn active" data-tab="drinks"
+              onclick="setTab('drinks',this)"
+              data-en="🍺 Drinks" data-sr="🍺 Piće" data-ru="🍺 Напитки">🍺 Drinks</button>
+      <button class="tab-btn" data-tab="food"
+              onclick="setTab('food',this)"
+              data-en="🍟 Food" data-sr="🍟 Hrana" data-ru="🍟 Еда">🍟 Food</button>
+    </div>
+
+    <!-- DRINKS TAB -->
+    <div id="tab-drinks" class="tab-panel active">
+
+      <div class="section" style="margin-top:0">
+        <div class="section-title" data-en="On Tap" data-sr="Na točenju" data-ru="На кранах">On Tap</div>
+        <div class="menu-card">
+          <div class="menu-item"><span data-en="Mammut Pilsner · Pilsner 5.0% · 0.5 L" data-sr="Mammut Pilsner · Pilsner 5,0% · 0,5 L" data-ru="Mammut Pilsner · Пилснер 5,0% · 0,5 л">Mammut Pilsner · Pilsner 5.0% · 0.5 L</span><span class="price">€4.20</span></div>
+          <div class="menu-item"><span data-en="Peroni Svijetlo · Pale Lager 4.7% · 0.5 L" data-sr="Peroni Svijetlo · Svijetli lager 4,7% · 0,5 L" data-ru="Peroni Svijetlo · Светлый лагер 4,7% · 0,5 л">Peroni Svijetlo · Pale Lager 4.7% · 0.5 L</span><span class="price">€4.00</span></div>
+          <div class="menu-item"><span data-en="Kozel Crno · Dark Lager 3.8% · 0.5 L" data-sr="Kozel Crno · Tamni lager 3,8% · 0,5 L" data-ru="Kozel Crno · Тёмный лагер 3,8% · 0,5 л">Kozel Crno · Dark Lager 3.8% · 0.5 L</span><span class="price">€4.50</span></div>
+          <div class="menu-item"><span data-en="Mammut IPA Dakota · IPA 5.7% · 0.5 L" data-sr="Mammut IPA Dakota · IPA 5,7% · 0,5 L" data-ru="Mammut IPA Dakota · IPA 5,7% · 0,5 л">Mammut IPA Dakota · IPA 5.7% · 0.5 L</span><span class="price">€5.00</span></div>
+          <div class="menu-item"><span data-en="Ayinger Bräuweisse · Wheat 5.1% · 0.5 L" data-sr="Ayinger Bräuweisse · Pšenično 5,1% · 0,5 L" data-ru="Ayinger Bräuweisse · Пшеничное 5,1% · 0,5 л">Ayinger Bräuweisse · Wheat 5.1% · 0.5 L</span><span class="price">€5.50</span></div>
+          <div class="menu-item"><span data-en="Barbe Ruby · Cherry Ale 7.0% · 0.5 L" data-sr="Barbe Ruby · Ale sa višnjom 7,0% · 0,5 L" data-ru="Barbe Ruby · Вишнёвый эль 7,0% · 0,5 л">Barbe Ruby · Cherry Ale 7.0% · 0.5 L</span><span class="price">€7.00</span></div>
+          <div class="menu-item"><span data-en="Aperol Spritz · 180 ml" data-sr="Aperol Spritz · 180 ml" data-ru="Aperol Spritz · 180 мл">Aperol Spritz · 180 ml</span><span class="price">€8.00</span></div>
+          <div class="menu-item"><span data-en="Margarita · 180 ml" data-sr="Margarita · 180 ml" data-ru="Маргарита · 180 мл">Margarita · 180 ml</span><span class="price">€10.00</span></div>
+        </div>
+
+        <div class="section-title" style="margin-top:24px" data-en="Belgian Shelf" data-sr="Belgijska polica" data-ru="Бельгийская полка">Belgian Shelf</div>
+        <div class="menu-card">
+          <div class="menu-item"><span data-en="Delirium Tremens · Strong Blonde 8.5% · 0.33" data-sr="Delirium Tremens · Jaki blond 8,5% · 0,33" data-ru="Delirium Tremens · Крепкий блонд 8,5% · 0,33">Delirium Tremens · Strong Blonde 8.5% · 0.33</span><span class="price">€7.00</span></div>
+          <div class="menu-item"><span data-en="Rochefort 10 · Quadrupel 11.3% · 0.33" data-sr="Rochefort 10 · Quadrupel 11,3% · 0,33" data-ru="Rochefort 10 · Квадрюпель 11,3% · 0,33">Rochefort 10 · Quadrupel 11.3% · 0.33</span><span class="price">€8.00</span></div>
+          <div class="menu-item"><span data-en="Chimay Bleue · Trappist 9.0% · 0.33" data-sr="Chimay Bleue · Trappist 9,0% · 0,33" data-ru="Chimay Bleue · Траппист 9,0% · 0,33">Chimay Bleue · Trappist 9.0% · 0.33</span><span class="price">€7.50</span></div>
+          <div class="menu-item"><span data-en="Pauwel Kwak Amber · Amber 8.4% · 0.33" data-sr="Pauwel Kwak Amber · Amber 8,4% · 0,33" data-ru="Pauwel Kwak Amber · Амбер 8,4% · 0,33">Pauwel Kwak Amber · Amber 8.4% · 0.33</span><span class="price">€7.00</span></div>
+          <div class="menu-item"><span data-en="Lindemans Framboise · Raspberry Lambic 2.5% · 0.25" data-sr="Lindemans Framboise · Malina lambik 2,5% · 0,25" data-ru="Lindemans Framboise · Малиновый ламбик 2,5% · 0,25">Lindemans Framboise · Raspberry Lambic 2.5% · 0.25</span><span class="price">€6.00</span></div>
+        </div>
+
+        <div class="section-title" style="margin-top:24px" data-en="Also Available" data-sr="Još u ponudi" data-ru="Также есть">Also Available</div>
+        <div class="menu-card">
+          <div class="menu-item"><span data-en="Trabanco Sidra Natural · 6.0% · 0.7 L" data-sr="Trabanco Sidra Natural · 6,0% · 0,7 L" data-ru="Trabanco натуральный сидр · 6,0% · 0,7 л">Trabanco Sidra Natural · 6.0% · 0.7 L</span><span class="price">€11.00</span></div>
+          <div class="menu-item"><span data-en="La Farra Prosecco DOC Brut · by the glass" data-sr="La Farra Prosecco DOC Brut · na čašu" data-ru="La Farra Prosecco DOC Brut · бокал">La Farra Prosecco DOC Brut · by the glass</span><span class="price">€4.50</span></div>
+        </div>
+      </div>
+
+    </div><!-- /tab-drinks -->
+
+    <!-- FOOD TAB -->
+    <div id="tab-food" class="tab-panel">
+
+      <div class="section" style="margin-top:0">
+        <div class="section-title" data-en="Snacks" data-sr="Zalogaji" data-ru="Закуски">Snacks</div>
+        <div class="menu-card">
+          <div class="menu-item"><span data-en="Chicken Wings · 300 g" data-sr="Pileća krilca · 300 g" data-ru="Куриные крылья · 300 г">Chicken Wings · 300 g</span><span class="price">€7.00</span></div>
+          <div class="menu-item"><span data-en="Breaded Shrimp · 250 g" data-sr="Pohrane kozice · 250 g" data-ru="Креветки в кляре · 250 г">Breaded Shrimp · 250 g</span><span class="price">€12.00</span></div>
+          <div class="menu-item"><span data-en="Cheese Sticks" data-sr="Pohrani štapići sira" data-ru="Сырные палочки">Cheese Sticks</span><span class="price">€6.00</span></div>
+          <div class="menu-item"><span data-en="French Fries · 250 g" data-sr="Pomfrit · 250 g" data-ru="Картофель фри · 250 г">French Fries · 250 g</span><span class="price">€3.50</span></div>
+          <div class="menu-item"><span data-en="Peanuts · 80 g" data-sr="Kikiriki · 80 g" data-ru="Орехи · 80 г">Peanuts · 80 g</span><span class="price">€3.00</span></div>
+        </div>
+
+        <div class="section-title" style="margin-top:24px" data-en="Jerky · 50 g" data-sr="Džerki · 50 g" data-ru="Джерки · 50 г">Jerky · 50 g</div>
+        <div class="menu-card">
+          <div class="menu-item"><span data-en="Chicken" data-sr="Pileći" data-ru="Куриные">Chicken</span><span class="price">€5.00</span></div>
+          <div class="menu-item"><span data-en="Pork" data-sr="Svinjski" data-ru="Свиные">Pork</span><span class="price">€5.00</span></div>
+        </div>
+
+        <div class="section-title" style="margin-top:24px" data-en="Sauces · 50 g" data-sr="Sosovi · 50 g" data-ru="Соусы · 50 г">Sauces · 50 g</div>
+        <div class="menu-card">
+          <div class="menu-item"><span data-en="Ketchup" data-sr="Kečap" data-ru="Кетчуп">Ketchup</span><span class="price">€0.50</span></div>
+          <div class="menu-item"><span data-en="Chilli Mayo" data-sr="Chilli mayo" data-ru="Чили-майо">Chilli Mayo</span><span class="price">€1.00</span></div>
+          <div class="menu-item"><span data-en="Lingonberry" data-sr="Brusnica" data-ru="Брусника">Lingonberry</span><span class="price">€1.00</span></div>
+        </div>
+      </div>
+
+    </div><!-- /tab-food -->
+
+    <!-- QR code for digital menu (for table tents / printing) -->
     <div class="section">
-      <div class="section-title" data-en="On Tap" data-sr="Na točenju" data-ru="На кранах">On Tap</div>
-      <div class="menu-card">
-        <div class="menu-item"><span data-en="Mammut Pilsner · Pilsner 5.0% · 0.5 L" data-sr="Mammut Pilsner · Pilsner 5,0% · 0,5 L" data-ru="Mammut Pilsner · Пилснер 5,0% · 0,5 л">Mammut Pilsner · Pilsner 5.0% · 0.5 L</span><span class="price">€4.20</span></div>
-        <div class="menu-item"><span data-en="Peroni Svijetlo · Pale Lager 4.7% · 0.5 L" data-sr="Peroni Svijetlo · Svijetli lager 4,7% · 0,5 L" data-ru="Peroni Svijetlo · Светлый лагер 4,7% · 0,5 л">Peroni Svijetlo · Pale Lager 4.7% · 0.5 L</span><span class="price">€4.00</span></div>
-        <div class="menu-item"><span data-en="Kozel Crno · Dark Lager 3.8% · 0.5 L" data-sr="Kozel Crno · Tamni lager 3,8% · 0,5 L" data-ru="Kozel Crno · Тёмный лагер 3,8% · 0,5 л">Kozel Crno · Dark Lager 3.8% · 0.5 L</span><span class="price">€4.50</span></div>
-        <div class="menu-item"><span data-en="Mammut IPA Dakota · IPA 5.7% · 0.5 L" data-sr="Mammut IPA Dakota · IPA 5,7% · 0,5 L" data-ru="Mammut IPA Dakota · IPA 5,7% · 0,5 л">Mammut IPA Dakota · IPA 5.7% · 0.5 L</span><span class="price">€5.00</span></div>
-        <div class="menu-item"><span data-en="Ayinger Bräuweisse · Wheat 5.1% · 0.5 L" data-sr="Ayinger Bräuweisse · Pšenično 5,1% · 0,5 L" data-ru="Ayinger Bräuweisse · Пшеничное 5,1% · 0,5 л">Ayinger Bräuweisse · Wheat 5.1% · 0.5 L</span><span class="price">€5.50</span></div>
-        <div class="menu-item"><span data-en="Barbe Ruby · Cherry Ale 7.0% · 0.5 L" data-sr="Barbe Ruby · Ale sa višnjom 7,0% · 0,5 L" data-ru="Barbe Ruby · Вишнёвый эль 7,0% · 0,5 л">Barbe Ruby · Cherry Ale 7.0% · 0.5 L</span><span class="price">€7.00</span></div>
-        <div class="menu-item"><span data-en="Aperol Spritz · 180 ml" data-sr="Aperol Spritz · 180 ml" data-ru="Aperol Spritz · 180 мл">Aperol Spritz · 180 ml</span><span class="price">€8.00</span></div>
-        <div class="menu-item"><span data-en="Margarita · 180 ml" data-sr="Margarita · 180 ml" data-ru="Маргарита · 180 мл">Margarita · 180 ml</span><span class="price">€10.00</span></div>
-      </div>
-
-      <div class="section-title" style="margin-top:24px" data-en="Belgian Shelf" data-sr="Belgijska polica" data-ru="Бельгийская полка">Belgian Shelf</div>
-      <div class="menu-card">
-        <div class="menu-item"><span data-en="Delirium Tremens · Strong Blonde 8.5% · 0.33" data-sr="Delirium Tremens · Jaki blond 8,5% · 0,33" data-ru="Delirium Tremens · Крепкий блонд 8,5% · 0,33">Delirium Tremens · Strong Blonde 8.5% · 0.33</span><span class="price">€7.00</span></div>
-        <div class="menu-item"><span data-en="Rochefort 10 · Quadrupel 11.3% · 0.33" data-sr="Rochefort 10 · Quadrupel 11,3% · 0,33" data-ru="Rochefort 10 · Квадрюпель 11,3% · 0,33">Rochefort 10 · Quadrupel 11.3% · 0.33</span><span class="price">€8.00</span></div>
-        <div class="menu-item"><span data-en="Chimay Bleue · Trappist 9.0% · 0.33" data-sr="Chimay Bleue · Trappist 9,0% · 0,33" data-ru="Chimay Bleue · Траппист 9,0% · 0,33">Chimay Bleue · Trappist 9.0% · 0.33</span><span class="price">€7.50</span></div>
-        <div class="menu-item"><span data-en="Pauwel Kwak Amber · Amber 8.4% · 0.33" data-sr="Pauwel Kwak Amber · Amber 8,4% · 0,33" data-ru="Pauwel Kwak Amber · Амбер 8,4% · 0,33">Pauwel Kwak Amber · Amber 8.4% · 0.33</span><span class="price">€7.00</span></div>
-        <div class="menu-item"><span data-en="Lindemans Framboise · Raspberry Lambic 2.5% · 0.25" data-sr="Lindemans Framboise · Malina lambik 2,5% · 0,25" data-ru="Lindemans Framboise · Малиновый ламбик 2,5% · 0,25">Lindemans Framboise · Raspberry Lambic 2.5% · 0.25</span><span class="price">€6.00</span></div>
-      </div>
-
-      <div class="section-title" style="margin-top:24px" data-en="Also Available" data-sr="Još u ponudi" data-ru="Также есть">Also Available</div>
-      <div class="menu-card">
-        <div class="menu-item"><span data-en="Trabanco Sidra Natural · 6.0% · 0.7 L" data-sr="Trabanco Sidra Natural · 6,0% · 0,7 L" data-ru="Trabanco натуральный сидр · 6,0% · 0,7 л">Trabanco Sidra Natural · 6.0% · 0.7 L</span><span class="price">€11.00</span></div>
-        <div class="menu-item"><span data-en="La Farra Prosecco DOC Brut · by the glass" data-sr="La Farra Prosecco DOC Brut · na čašu" data-ru="La Farra Prosecco DOC Brut · бокал">La Farra Prosecco DOC Brut · by the glass</span><span class="price">€4.50</span></div>
+      <div class="qr-card">
+        <div class="qr-box"><div id="qr-canvas"></div></div>
+        <div class="qr-meta">
+          <strong data-en="Digital Menu" data-sr="Digitalni Meni" data-ru="Цифровое меню">Digital Menu</strong>
+          <span data-en="Scan to open on your phone" data-sr="Skenirajte za prikaz na telefonu" data-ru="Сканируйте, чтобы открыть на телефоне">Scan to open on your phone</span>
+          <span style="margin-top:6px; color: var(--yellow); font-size:11px;">brewsleebar.me</span>
+        </div>
       </div>
     </div>
 
-    <!-- WAYFINDING: needs address + entrance photos (different entrance than WaxBrew) -->
+    <!-- How to find us -->
     <div class="section">
       <div class="section-title" data-en="How to Find Us" data-sr="Kako nas naći" data-ru="Как нас найти">How to Find Us</div>
       <div class="route-option" data-en="Hotel Tre Canne, Budva" data-sr="Hotel Tre Canne, Budva" data-ru="Отель Тре Канн, Будва">Hotel Tre Canne, Budva</div>
@@ -201,7 +258,7 @@
       </div>
     </div>
 
-    <!-- HOURS: placeholder, needs confirmed hours -->
+    <!-- Opening hours -->
     <div class="section">
       <div class="section-title" data-en="Opening Hours" data-sr="Radno vrijeme" data-ru="Часы работы">Opening Hours</div>
       <div class="hours-grid">
@@ -209,6 +266,7 @@
       </div>
     </div>
 
+    <!-- Gallery -->
     <div class="section">
       <div class="section-title" data-en="Inside" data-sr="Unutra" data-ru="Внутри">Inside</div>
       <div class="gallery">
@@ -219,6 +277,67 @@
       </div>
     </div>
 
+    <!-- Your Evening — private event packages -->
+    <div class="section">
+      <div class="section-title" data-en="Your Evening" data-sr="Tvoj Večer" data-ru="Твой Вечер">Your Evening</div>
+      <p style="font-size:15px; line-height:1.55; color:var(--muted); margin:0 0 14px;"
+         data-en="Rent the whole bar for your birthday. Your crew, your music, your bartender — inside only. Terrace stays open for all."
+         data-sr="Iznajmi cijeli bar za tvoj rođendan. Tvoji, tvoja muzika, tvoj barmen — samo unutra. Terasa ostaje otvorena za sve."
+         data-ru="Сними бар целиком на день рождения. Твоя компания, твоя музыка, твой бармен — только внутри. Терраса работает для всех.">Rent the whole bar for your birthday. Your crew, your music, your bartender — inside only. Terrace stays open for all.</p>
+
+      <p class="event-note"
+         data-en="Mon – Thu + Sun · up to 15 guests · 50% prepayment · no rental fee — deposit counts toward your bill"
+         data-sr="Pon – Čet + Ned · do 15 gostiju · 50% predujam · bez naknade za najam — depozit ide na račun"
+         data-ru="Пн – Чт + Вс · до 15 гостей · предоплата 50% · без аренды — депозит идёт в счёт">Mon – Thu + Sun · up to 15 guests · 50% prepayment · no rental fee — deposit counts toward your bill</p>
+
+      <!-- Package 1 -->
+      <div class="event-pkg">
+        <div class="pkg-header">
+          <div>
+            <div class="pkg-name" data-en="Your Crowd" data-sr="Vaša Ekipa" data-ru="Своя Компания">Your Crowd</div>
+            <div class="pkg-dur" data-en="3 hours" data-sr="3 sata" data-ru="3 часа">3 hours</div>
+          </div>
+          <div class="pkg-price">
+            <strong>€300</strong>
+            <span data-en="deposit" data-sr="depozit" data-ru="депозит">deposit</span>
+          </div>
+        </div>
+        <ul class="pkg-list">
+          <li data-en="Welcome beer 0.5 L for all 15 guests" data-sr="Welcome pivo 0,5 L za svih 15 gostiju" data-ru="Welcome-бокал 0,5 л для 15 гостей">Welcome beer 0.5 L for all 15 guests</li>
+          <li data-en="French fries · Chicken wings · Beer nuts" data-sr="Pomfrit · Pileća krilca · Pivo orasi" data-ru="Картофель фри · Куриные крылья · Орехи к пиву">French fries · Chicken wings · Beer nuts</li>
+          <li data-en="DJ — 3 h, your playlist" data-sr="DJ — 3 h, vaša muzika" data-ru="DJ — 3 ч, ваш плейлист">DJ — 3 h, your playlist</li>
+          <li data-en="Remaining deposit goes toward drinks" data-sr="Ostatak depozita ide na piće" data-ru="Остаток депозита идёт в счёт напитков">Remaining deposit goes toward drinks</li>
+        </ul>
+        <a class="btn btn-primary" href="https://t.me/brewslee_bar_bot?start=book_crowd" target="_blank" rel="noopener"
+           onclick="gtag('event','click_book_evening',{event_category:'cta',event_label:'pkg_crowd'})"
+           data-en="📅 Book This Evening" data-sr="📅 Rezerviši Večer" data-ru="📅 Забронировать вечер">📅 Book This Evening</a>
+      </div>
+
+      <!-- Package 2 -->
+      <div class="event-pkg">
+        <div class="pkg-header">
+          <div>
+            <div class="pkg-name" data-en="Full Evening" data-sr="Puna Večer" data-ru="Полный Вечер">Full Evening</div>
+            <div class="pkg-dur" data-en="4 hours" data-sr="4 sata" data-ru="4 часа">4 hours</div>
+          </div>
+          <div class="pkg-price">
+            <strong>€450</strong>
+            <span data-en="deposit" data-sr="depozit" data-ru="депозит">deposit</span>
+          </div>
+        </div>
+        <ul class="pkg-list">
+          <li data-en="Everything in Your Crowd" data-sr="Sve iz Vaše Ekipe" data-ru="Всё из «Своя Компания»">Everything in Your Crowd</li>
+          <li data-en="MC host — quiz, games, contests (2 h)" data-sr="Voditelj — kviz, igre, takmičenja (2 h)" data-ru="Ведущий — квиз, игры, конкурсы (2 ч)">MC host — quiz, games, contests (2 h)</li>
+          <li data-en="Birthday gift: engraved glass + sweatshirt or polo" data-sr="Poklon imeniaru: personalizovana čaša + dukserica ili polo" data-ru="Подарок имениннику: именной бокал + свитшот или поло">Birthday gift: engraved glass + sweatshirt or polo</li>
+          <li data-en="DJ — 4 h, your playlist" data-sr="DJ — 4 h, vaša muzika" data-ru="DJ — 4 ч, ваш плейлист">DJ — 4 h, your playlist</li>
+        </ul>
+        <a class="btn btn-primary" href="https://t.me/brewslee_bar_bot?start=book_full" target="_blank" rel="noopener"
+           onclick="gtag('event','click_book_evening',{event_category:'cta',event_label:'pkg_full'})"
+           data-en="🎂 Book Full Evening" data-sr="🎂 Rezerviši Punu Večer" data-ru="🎂 Забронировать полный вечер">🎂 Book Full Evening</a>
+      </div>
+    </div>
+
+    <!-- BrewsLee Club -->
     <div class="section">
       <div class="section-title" data-en="BrewsLee Club" data-sr="BrewsLee Klub" data-ru="BrewsLee Клуб">BrewsLee Club</div>
       <div class="club-card">
@@ -232,7 +351,52 @@
           <div class="belt-row"><span class="belt br">🟫 Brown · 28 visits</span><span class="belt-free" data-en="every 6th + −10%" data-sr="svaka 6-ta + −10%" data-ru="каждая 6-я + −10%">every 6th + −10%</span></div>
           <div class="belt-row"><span class="belt bk">⬛ Black · 50 visits</span><span class="belt-free" data-en="every 5th + −20%" data-sr="svaka 5-ta + −20%" data-ru="каждая 5-я + −20%">every 5th + −20%</span></div>
         </div>
-        <a class="btn btn-primary" href="https://t.me/brewslee_bar_bot" target="_blank" rel="noopener"
+
+        <!-- Order section — members only -->
+        <div class="order-wrap">
+          <div class="order-title"
+               data-en="ORDER FROM THE MENU"
+               data-sr="NARUČI IZ MENIJA"
+               data-ru="ЗАКАЗ ИЗ МЕНЮ">ORDER FROM THE MENU</div>
+
+          <div id="order-login">
+            <p data-en="Club members can send their order directly to the bar. Log in with Telegram to continue."
+               data-sr="Članovi kluba mogu poslati narudžbu direktno baru. Prijavi se putem Telegrama."
+               data-ru="Участники клуба могут отправить заказ прямо бармену. Войди через Telegram.">Club members can send their order directly to the bar. Log in with Telegram to continue.</p>
+            <!-- Telegram Login Widget — requires BotFather: /setdomain brewsleebar.me on @brewslee_bar_bot -->
+            <script async src="https://telegram.org/js/telegram-widget.js?22"
+              data-telegram-login="brewslee_bar_bot"
+              data-size="large"
+              data-radius="8"
+              data-onauth="onTelegramAuth(user)"
+              data-request-access="write">
+            </script>
+          </div>
+
+          <div id="order-form">
+            <p class="order-member-info" id="order-greeting"></p>
+            <ul class="order-items">
+              <li class="order-item"><input type="checkbox" id="o1" class="order-check" data-item="Mammut Pilsner 0.5L — €4.20"><label for="o1">Mammut Pilsner 0.5 L</label><span class="price">€4.20</span></li>
+              <li class="order-item"><input type="checkbox" id="o2" class="order-check" data-item="Peroni Lager 0.5L — €4.00"><label for="o2">Peroni Lager 0.5 L</label><span class="price">€4.00</span></li>
+              <li class="order-item"><input type="checkbox" id="o3" class="order-check" data-item="Kozel Dark 0.5L — €4.50"><label for="o3">Kozel Dark 0.5 L</label><span class="price">€4.50</span></li>
+              <li class="order-item"><input type="checkbox" id="o4" class="order-check" data-item="Mammut IPA 0.5L — €5.00"><label for="o4">Mammut IPA 0.5 L</label><span class="price">€5.00</span></li>
+              <li class="order-item"><input type="checkbox" id="o5" class="order-check" data-item="Ayinger Wheat 0.5L — €5.50"><label for="o5">Ayinger Wheat 0.5 L</label><span class="price">€5.50</span></li>
+              <li class="order-item"><input type="checkbox" id="o6" class="order-check" data-item="Barbe Ruby Cherry Ale 0.5L — €7.00"><label for="o6">Barbe Ruby Cherry Ale 0.5 L</label><span class="price">€7.00</span></li>
+              <li class="order-item"><input type="checkbox" id="o7" class="order-check" data-item="Aperol Spritz 180ml — €8.00"><label for="o7">Aperol Spritz 180 ml</label><span class="price">€8.00</span></li>
+              <li class="order-item"><input type="checkbox" id="o8" class="order-check" data-item="Margarita 180ml — €10.00"><label for="o8">Margarita 180 ml</label><span class="price">€10.00</span></li>
+              <li class="order-item"><input type="checkbox" id="o9" class="order-check" data-item="🍗 Chicken Wings 300g — €7.00"><label for="o9">🍗 Chicken Wings 300 g</label><span class="price">€7.00</span></li>
+              <li class="order-item"><input type="checkbox" id="o10" class="order-check" data-item="🍤 Breaded Shrimp 250g — €12.00"><label for="o10">🍤 Breaded Shrimp 250 g</label><span class="price">€12.00</span></li>
+              <li class="order-item"><input type="checkbox" id="o11" class="order-check" data-item="🧀 Cheese Sticks — €6.00"><label for="o11">🧀 Cheese Sticks</label><span class="price">€6.00</span></li>
+              <li class="order-item"><input type="checkbox" id="o12" class="order-check" data-item="🍟 French Fries 250g — €3.50"><label for="o12">🍟 French Fries 250 g</label><span class="price">€3.50</span></li>
+              <li class="order-item"><input type="checkbox" id="o13" class="order-check" data-item="🥜 Peanuts 80g — €3.00"><label for="o13">🥜 Peanuts 80 g</label><span class="price">€3.00</span></li>
+            </ul>
+            <textarea class="order-note-input" id="order-note" rows="2" placeholder="Notes — table number, special requests…"></textarea>
+            <button class="order-send-btn" onclick="sendOrder()">📲 Send Order via Telegram</button>
+          </div>
+        </div>
+
+        <div style="border-top:1px solid var(--border); margin:20px 0 0;"></div>
+        <a class="btn btn-primary" href="https://t.me/brewslee_bar_bot" target="_blank" rel="noopener" style="margin-top:16px;"
            onclick="gtag('event','click_loyalty_bot',{event_category:'cta',event_label:'telegram_bot'})"
            data-en="🐉 Join the Club — t.me/brewslee_bar_bot" data-sr="🐉 Pridruži se Klubu" data-ru="🐉 Вступить в Клуб">🐉 Join the Club — t.me/brewslee_bar_bot</a>
       </div>
